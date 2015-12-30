@@ -39,6 +39,7 @@
  ********************************************************************************/
 
 //session_destroy();
+error_reporting(E_ALL & ~(E_STRICT | E_NOTICE));
 if (version_compare(phpversion(),'5.2.0') < 0) {
 	$msg = 'Minimum PHP version required is 5.2.0.  You are using PHP version  '. phpversion();
     die($msg);
